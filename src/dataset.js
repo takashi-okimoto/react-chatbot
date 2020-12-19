@@ -2,8 +2,8 @@ const defaultDataset = {
     "init": {
         answers: [
             {content: "仕事を依頼したい", nextId: "job_offer"},
-            {content: "エンジニアのキャリアについて相談したい", nextId: "consultant"},
-            {content: "学習コミュニティについて知りたい", nextId: "community"},
+            {content: "あなたの趣味は？", nextId: "hobby"},
+            {content: "好みのタイプは？", nextId: "favorite_type"},
             {content: "お付き合いしたい", nextId: "dating"},
         ],
         question: "こんにちは！たかちゃんへのご用件はなんでしょうか？",
@@ -45,36 +45,39 @@ const defaultDataset = {
         ],
         question: "その他についてですね。コチラからお問い合わせできます。",
     },
-    "consultant": {
+    "hobby": {
         answers: [
-            {content: "YouTubeで動画を見る", nextId: "https://www.youtube.com/channel/UC-bOAxx-YOsviSmqh8COR0w"},
-            {content: "学習コミュニティについて知りたい", nextId: "community"},
+            {content: "飲み会に参加する", nextId: "https://twitter.com/taka12199762"},
             {content: "最初の質問に戻る", nextId: "init"}
         ],
-        question: "トラハックは普段からYouTubeでキャリアについて発信しています。また、僕が運営するエンジニア向け学習コミュニティ内でも相談に乗っていますよ。",
+        question: "友人とのBBQと飲み会です。誰でもウェルカムなので気軽に連絡してください",
     },
-    "community": {
+    "favorite_type": {
         answers: [
-            {content: "どんな活動をしているの？", nextId: "community_activity"},
-            {content: "コミュニティに参加したい", nextId: "https://torahack.web.app/community/"},
+            {content: "見た目のタイプは？", nextId: "appearance_type"},
             {content: "最初の質問に戻る", nextId: "init"}
         ],
-        question: "2020年3月から学習コミュニティを始めました！🎉Webエンジニアへの転職を目指す人向けに、プログラミングを教えたりキャリアの相談に乗っています。",
+        question: "自分を持っている、意志の強い女性です。",
     },
-    "community_activity": {
+    "appearance_type": {
         answers: [
-            {content: "さらに詳細を知りたい", nextId: "https://youtu.be/tIzE7hUDbBM"},
-            {content: "コミュニティに参加したい", nextId: "https://torahack.web.app/community/"},
+            {content: "おっぱいとお尻、どっち派？", nextId: "love_and_peace"},
             {content: "最初の質問に戻る", nextId: "init"}
         ],
-        question: "フロントエンド向けの教材の提供、キャリアや勉強法に関するメルマガの配信、週1のオンライン作業会などを開催しています！\n詳細はYouTube動画で紹介しています。",
+        question: "カワイイ系よりも、キレイ系がタイプです。",
+    },
+    "love_and_peace": {
+        answers: [
+            {content: "最初の質問に戻る", nextId: "init"}
+        ],
+        question: "愛は世界を救うと思います。",
     },
     "dating": {
         answers: [
-            {content: "DMする", nextId: "https://twitter.com/torahack_"},
+            {content: "DMする", nextId: "https://twitter.com/taka12199762"},
             {content: "最初の質問に戻る", nextId: "init"}
         ],
-        question: "まずは一緒にランチでもいかがですか？DMしてください😘",
+        question: "まずは気軽にご飯でもいかがですか？DMお待ちしてます🤗",
     },
 }
 
